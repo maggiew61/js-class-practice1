@@ -1,6 +1,6 @@
 
 class TODOSystemView {  //equialent to 構造函數on the right
-    constructor(x) {
+    constructor(x) {   //constructor()不設邏輯的東西 比較複雜的可放init() 類似像vue的reutnr data
       console.log('x is',x)
       this.test = 5
       //test
@@ -8,7 +8,7 @@ class TODOSystemView {  //equialent to 構造函數on the right
       //tset
       this.init()
     }
-    init() {
+    init() {  //created 
         var btn = document.querySelector('button')
         let vm = this
         btn.addEventListener("click", 
